@@ -113,3 +113,54 @@ body {
   margin: 2rem 0;
   font-weight: 700;
 }
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: block;
+    display: flex;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar a {
+    list-style: none;
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-left: 12%;
+  }
+
+  .navbar-item a {
+    list-style: none;
+    text-decoration: none;
+    color: #272a31;
+    padding: 1rem;
+  }
+
+  .navbar button {
+    border: 4px solid #ec5242;
+    margin-left: 8%;
+    padding: 1rem;
+  }
+
+  .navbar button a {
+    color: #ec5242;
+    font-weight: 700;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .about-list {
+    flex-direction: row;
+  }
+}
