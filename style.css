@@ -195,7 +195,7 @@ body {
 
   .about-list {
     flex-direction: row;
-    padding: 0 20rem;
+    padding: 2rem 30rem;
     gap: 0;
   }
 
