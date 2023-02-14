@@ -11,8 +11,14 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .home-page {
   background: url("./img/download.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
@@ -34,26 +40,30 @@ html {
 
 .body-disc {
   font-size: 20px;
-  color: #ee3100;
+  color: #ec5242;
 }
 
 .home-heading {
   font-size: 32px;
-  color: #ff6b00;
+  color: #ec5242;
+  font-weight: 700;
 }
 
 .body-disc2 {
   padding: 1rem;
   font-size: 14px;
-  background: #dfdddd;
+  background: #d3d3d3;
 }
 
 .heading2 {
   font-size: 28px;
+  font-weight: 700;
 }
 
 .about {
-  background: rgb(37, 32, 32);
+  background: #272a31;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-heading {
@@ -61,7 +71,7 @@ html {
   display: flex;
   justify-content: center;
   padding: 3rem;
-  color: rgb(199, 196, 196);
+  color: #d3d3d3;
 }
 
 .about-list {
@@ -75,7 +85,7 @@ html {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: rgb(68, 68, 68);
+  background-color: rgba(68, 68, 68, 0.301);
   margin: 0.1rem 1rem;
 }
 
@@ -85,7 +95,7 @@ html {
 
 .about-item h3 {
   font-size: 18px;
-  color: #851c02;
+  color: #ec5242;
 }
 
 .about-item p {
@@ -97,9 +107,9 @@ html {
   padding: 2rem;
   font-size: 16px;
   color: #dfdddd;
-  background-color: #ee3100;
+  background-color: #ec5242;
   border: none;
-  display: flex;
-  margin-top: 3rem;
-  justify-content: center;
+  align-self: center;
+  margin: 2rem 0;
+  font-weight: 700;
 }
