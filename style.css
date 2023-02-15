@@ -243,4 +243,16 @@ body {
     font-size: 16px;
     line-height: 2.2rem;
   }
+
+  .navbar a:hover {
+    color: #ec5242;
+  }
+
+  .navbar-item a:hover {
+    color: #ec5242;
+  }
+
+  .about-item:hover {
+    border: 1px solid #fff;
+  }
 }
