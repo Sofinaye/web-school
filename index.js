@@ -100,7 +100,8 @@ const featureListsDom = () => {
       featureList1.appendChild(featureItem);
     }
   }
-  document.body.appendChild(featureContainer);
+  const mainBody = document.querySelector('.section-feature');
+  mainBody.appendChild(featureContainer);
 };
 
 const menuIcon = document.querySelector('#menu-icon');
