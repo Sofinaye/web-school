@@ -208,8 +208,16 @@ body {
   width: 30%;
 }
 
+.bgImg {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  z-index: -1;
+}
+
 .feature-img {
   width: 100%;
+  padding: 1rem;
   object-fit: cover;
 }
 
@@ -267,7 +275,8 @@ body {
 .footer {
   display: flex;
   gap: 3rem;
-  padding: 4rem;
+  justify-content: center;
+  padding: 3rem;
 }
 
 .footer-header {
@@ -415,5 +424,10 @@ body {
 
   .container {
     flex-direction: row;
+  }
+
+  .bgImg {
+    width: 5%;
+    height: 10%;
   }
 }

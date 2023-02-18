@@ -1,36 +1,42 @@
 const teachers = [
   {
     img: './img/steve.jpg',
+    bg: './img/pngg.png',
     name: 'Steve Kinney',
     position: 'A front-end architect',
     disc: 'He taught special education and web development.',
   },
   {
     img: './img/steve.jpg',
+    bg: './img/pngg.png',
     name: 'Steve Kinney',
     position: 'A front-end architect',
     disc: 'He taught special education and web development.',
   },
   {
     img: './img/steve.jpg',
+    bg: './img/pngg.png',
     name: 'Steve Kinney',
     position: 'A front-end architect',
     disc: 'He taught special education and web development.',
   },
   {
     img: './img/steve.jpg',
+    bg: './img/pngg.png',
     name: 'Steve Kinney',
     position: 'A front-end architect',
     disc: 'He taught special education and web development.',
   },
   {
     img: './img/steve.jpg',
+    bg: './img/pngg.png',
     name: 'Steve Kinney',
     position: 'A front-end architect',
     disc: 'He taught special education and web development.',
   },
   {
     img: './img/steve.jpg',
+    bg: './img/pngg.png',
     name: 'Steve Kinney',
     position: 'A front-end architect',
     disc: 'He taught special education and web development.',
@@ -69,6 +75,11 @@ const featureListsDom = () => {
     const featureImgContainer = document.createElement('div');
     featureImgContainer.setAttribute('class', 'img-container');
     featureItem.appendChild(featureImgContainer);
+
+    const bgImg = document.createElement('img');
+    bgImg.setAttribute('class', 'bgImg');
+    bgImg.setAttribute('src', teachers[i].bg);
+    featureImgContainer.appendChild(bgImg);
 
     const featureImg = document.createElement('img');
     featureImg.setAttribute('class', 'feature-img');
