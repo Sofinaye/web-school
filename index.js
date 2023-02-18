@@ -41,6 +41,15 @@ const featureListsDom = () => {
   const featureContainer = document.createElement('section');
   featureContainer.setAttribute('class', 'feature');
 
+  const featureTitle = document.createElement('h2');
+  featureTitle.setAttribute('class', 'feature-title');
+  featureTitle.innerText = 'Our Teachers';
+  featureContainer.appendChild(featureTitle);
+
+  const underline = document.createElement('div');
+  underline.setAttribute('class', 'underline');
+  featureContainer.appendChild(underline);
+
   const container = document.createElement('div');
   container.setAttribute('class', 'container');
   featureContainer.appendChild(container);

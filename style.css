@@ -176,6 +176,17 @@ body {
   display: none;
 }
 
+.feature-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.underline {
+  background-color: #ec5242;
+  height: 1px;
+  margin: 0.5rem 48%;
+}
+
 .container {
   display: flex;
   flex-direction: column;
