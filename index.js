@@ -41,14 +41,21 @@ const featureListsDom = () => {
   const featureContainer = document.createElement('section');
   featureContainer.setAttribute('class', 'feature');
 
-  teachers.forEach((project) => {
-    const featureList = document.createElement('div');
-    featureList.setAttribute('class', 'feature-list');
-    featureContainer.appendChild(featureList);
+  const container = document.createElement('div');
+  container.setAttribute('class', 'container');
+  featureContainer.appendChild(container);
 
+  const featureList = document.createElement('div');
+  featureList.setAttribute('class', 'feature-list');
+  container.appendChild(featureList);
+
+  const featureList1 = document.createElement('div');
+  featureList1.setAttribute('class', 'feature-list');
+  container.appendChild(featureList1);
+
+  for (let i = 0; i < teachers.length; i += 1) {
     const featureItem = document.createElement('div');
     featureItem.setAttribute('class', 'feature-item');
-    featureList.appendChild(featureItem);
 
     const featureImgContainer = document.createElement('div');
     featureImgContainer.setAttribute('class', 'img-container');
@@ -57,32 +64,35 @@ const featureListsDom = () => {
     const featureImg = document.createElement('img');
     featureImg.setAttribute('class', 'feature-img');
     featureImg.setAttribute('alt', 'steve');
-    featureImg.setAttribute('src', project.img);
+    featureImg.setAttribute('src', teachers[i].img);
     featureImgContainer.appendChild(featureImg);
 
     const featureDecription = document.createElement('div');
     featureDecription.setAttribute('class', 'feature-disc');
-    featureImg.appendChild(featureDecription);
+    featureItem.appendChild(featureDecription);
 
     const featureHeading = document.createElement('h3');
     featureHeading.setAttribute('class', 'feature-heading');
-    featureHeading.innerText = project.name;
+    featureHeading.innerText = teachers[i].name;
     featureDecription.appendChild(featureHeading);
 
     const featureHeading2 = document.createElement('h4');
     featureHeading2.setAttribute('class', 'feature-heading2');
-    featureHeading2.innerText = project.position;
+    featureHeading2.innerText = teachers[i].position;
     featureDecription.appendChild(featureHeading2);
 
     const featureBody = document.createElement('p');
     featureBody.setAttribute('class', 'feature-body');
-    featureBody.innerText = project.disc;
+    featureBody.innerText = teachers[i].disc;
     featureDecription.appendChild(featureBody);
-  });
-  return document.body.appendChild(featureContainer);
+    if (i % 2 === 0) {
+      featureList.appendChild(featureItem);
+    } else {
+      featureList1.appendChild(featureItem);
+    }
+  }
+  document.body.appendChild(featureContainer);
 };
-
-featureListsDom();
 
 const menuIcon = document.querySelector('#menu-icon');
 const menuToggle = document.querySelector('#menu-toggle');
@@ -94,3 +104,5 @@ menuIcon.addEventListener('click', () => {
 menuToggle.addEventListener('click', () => {
   menuSection.classList.remove('menu-section-active');
 });
+
+window.addEventListener('load', featureListsDom);
