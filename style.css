@@ -128,8 +128,14 @@ body {
   font-size: 20px;
   display: flex;
   justify-content: center;
-  padding: 3rem;
+  padding: 3rem 3rem 0.5rem 3rem;
   color: #d3d3d3;
+}
+
+.heading-under {
+  height: 1px;
+  margin: 1rem 48%;
+  background-color: #ec5242;
 }
 
 .about-list {
